@@ -51,6 +51,13 @@ jobs:
       # ------------------------------------------------------------------------
       # Publishing & draft release.
 
+      - name: Check version equality
+        run: |
+          pattern="__version__ = \"$(poetry version --short)\""
+          if ! grep -q -R -F --include="__init__.py" "$pattern" src; then
+            echo "::error::Version does not match __version__ variable."
+          fi
+
       - name: Publish to TestPyPI with Poetry
         run: poetry publish --build -n -u __token__ -p "$TOKEN"
         env:
