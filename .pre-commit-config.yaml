@@ -1,0 +1,68 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: check-ast
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: trailing-whitespace
+
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v9.4.0
+    hooks:
+      - id: commitlint
+        stages: [commit-msg]
+        additional_dependencies: ["@commitlint/config-conventional"]
+
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        language: system
+        entry: poetry run black
+        require_serial: true
+        types: [python]
+
+      - id: flake8
+        name: flake8
+        language: system
+        entry: poetry run flake8 --config .flake8 --statistics
+        require_serial: true
+        types: [python]
+
+      - id: isort
+        name: isort
+        language: system
+        entry: poetry run isort
+        require_serial: true
+        types: [python]
+
+      - id: mypy
+        name: mypy
+        language: system
+        entry: poetry run dmypy run --timeout 3600 --
+        require_serial: true
+        types: [python]
+
+exclude: |
+  (?x)^(
+    poetry.lock
+  )$
+
+ci:
+  skip:
+    - black
+    - flake8
+    - isort
+    - mypy
+  autofix_commit_msg: |
+    ci(pre-commit): Apply automatic fixes
+
+    For more information, see <https://pre-commit.com> and <https://pre-commit.ci>.
+  autoupdate_commit_msg: |
+    ci(pre-commit): Auto update hook revs
+
+    For more information, see <https://pre-commit.com> and <https://pre-commit.ci>.
