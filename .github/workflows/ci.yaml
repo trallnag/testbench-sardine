@@ -10,8 +10,8 @@ on:
   push:
     branches: [master, dev]
   schedule:
-    # At 08:04 on Monday.
-    - cron: 4 8 * * 1
+    # At 04:04 on Monday.
+    - cron: 4 4 * * 1
 
 env:
   poetry_version: "1.3.2"
@@ -25,7 +25,7 @@ jobs:
         python-version: ["3.11", "3.10"]
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       # ------------------------------------------------------------------------

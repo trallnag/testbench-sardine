@@ -1,30 +1,27 @@
-name: TestPyPI
+name: Release
 
 #
-# Publishes package to TestPyPI using Poetry.
+# Releases new version of this project.
 #
-# - Can be used safely on all types of commit references.
-# - Will fail if the the version is already available on TestPyPI.
-# - No tests, sanity checks, or anything like that before release.
+# Make sure to prepare project for a new release (see docs for more). After
+# publishing package a GitHub release is drafted. Will fail if the the version
+# is already available on PyPI.
 #
-# Project page on TestPyPI: https://test.pypi.org/project/testbench-sardine
+# Project page on PyPI: https://pypi.org/project/testbench-sardine
 #
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: Unique version to release to TestPyPI.
-        type: string
-        default: ""
+  push:
+    tags:
+      - v*.*.*
 
 env:
   poetry_version: "1.3.2"
   python_version: "3.11"
 
 jobs:
-  testpypi:
-    name: TestPyPI
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -52,16 +49,14 @@ jobs:
           POETRY_VERSION: ${{ env.poetry_version }}
 
       # ------------------------------------------------------------------------
-      # Release to TestPyPI.
-
-      - name: Adjust package version
-        if:  ${{ inputs.version != '' }}
-        run: poetry version -- ${{ inputs.version }}
-
-      - name: Configure Poetry repo for TestPyPI
-        run: poetry config repositories.testpypi https://test.pypi.org/legacy/
+      # Publishing & draft release.
 
       - name: Publish to TestPyPI with Poetry
-        run: poetry publish --build -n -r testpypi -u __token__ -p "$TOKEN"
+        run: poetry publish --build -n -u __token__ -p "$TOKEN"
         env:
-          TOKEN: ${{ secrets.TESTPYPI_TOKEN }}
+          TOKEN: ${{ secrets.PYPI_TOKEN }}
+
+      - name: Draft GitHub release
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: true
