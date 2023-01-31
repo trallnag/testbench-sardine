@@ -8,6 +8,10 @@ Pick a name for the new release. It must follow
 [Semantic Versioning](https://semver.org). For example `1.2.0` or `5.10.7`. In
 the following the name is referenced with `$VERSION`.
 
+```shell
+VERSION=1.0.1
+```
+
 Make sure that the "Unreleased" section in the [changelog](CHANGELOG.md) is
 up-to-date. Feel free to adjust entries for example by adding additional
 examples or highlighting breaking changes.
