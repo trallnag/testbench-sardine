@@ -61,7 +61,7 @@ jobs:
             echo "::error::Version set with Poetry does not match __version__ variable."; exit 1
           fi
 
-      - name: Publish to TestPyPI with Poetry
+      - name: Publish to PyPI with Poetry
         run: poetry publish --build -n -u __token__ -p "$TOKEN"
         env:
           TOKEN: ${{ secrets.PYPI_TOKEN }}
