@@ -63,14 +63,15 @@ Ensure that the tag is signed.
 git show v$VERSION
 ```
 
-Push changes, but not the tag.
+Push changes on the master branch.
 
 ```
-git push
+git push origin master
 ```
 
-Check workflow runs in GitHub Actions and ensure everything is fine. Now push
-the tag itself.
+Check workflow runs in GitHub Actions and ensure everything is fine.
+
+Now push the tag itself.
 
 ```
 git push origin v$VERSION
