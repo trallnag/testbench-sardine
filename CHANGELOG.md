@@ -7,7 +7,11 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0),
 
 ## Unreleased
 
-Nothing.
+## Changed
+
+- Adjusted documentation of release process. In reality this should not be part
+  of the changelog. But again, it is just for testing. Done in
+  [#1](https://github.com/trallnag/testbench-sardine/pull/1).
 
 ## [1.0.1](https://github.com/trallnag/kubestatus2cloudwatch/compare/v1.0.0...v1.0.1) / 2023-01-31
 
