@@ -89,6 +89,8 @@ Go to the release page of this project on GitHub
 [here](https://github.com/trallnag/testbench-sardine/releases) and review
 the automatically created release draft.
 
+Set the release title to `$VERSION / $DATE`. For example "1.0.0 / 2023-01-01".
+
 Add release notes by extracting them from the [changelog](CHANGELOG.md).
 
 Publish the release draft.
