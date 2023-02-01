@@ -3,32 +3,25 @@
 Thank you for your interest in improving this project. Your contributions are
 appreciated.
 
-There are many ways to contribute, improving the documentation, submitting bug
-reports and feature requests, giving feedback, or writing code.
+There are many ways to contribute, like improving the documentation, submitting
+bug reports and feature requests, or writing code.
 
 If you have a trivial fix or improvement, go ahead and create a pull request.
 
 If you plan something more involved, first raise an issue to discuss.
 
-In addition to this document, consult [`DEVELOPMENT.md`](DEVELOPMENT.md) for
-guidance regarding developing this project and [`RELEASE.md`](RELEASE.md) for
-documentation of the release management process (if applicable).
-
-Also consider taking a look at the development documentation at
+Consult [`DEVELOPMENT.md`](DEVELOPMENT.md) for guidance regarding development
+and [`RELEASE.md`](RELEASE.md) for documentation of the release process.
+Consider taking a look at the development documentation at
 [`docs/devel`](docs/devel). It contains more detailed documentation and other
 assets.
 
-Should you wish to work on an issue, please claim it first by commenting on the
-GitHub issue that you want to work on it. This is to prevent duplicated efforts
-from contributors on the same issue.
+Should you wish to work on an issue, please claim it first by commenting on it.
 
 To submit changes, respect the following guidelines:
 
-- Branch from the master branch and, if needed, rebase to the current main
-  branch before submitting your pull request. If it doesn't merge cleanly with
-  main you may be asked to rebase your changes.
-- Commits should be as small as possible, while ensuring that each commit is
-  correct independently (i.e., each commit should compile and pass tests).
+- Branch from the master branch and, if needed, rebase to the master branch
+  before submitting your pull request.
 - Update [`CHANGELOG.md`](CHANGELOG.md) if the contribution relevant for the
   changelog according to the
   [Keep a Changelog](https://keepachangelog.com/en/1.1.0) specification.
