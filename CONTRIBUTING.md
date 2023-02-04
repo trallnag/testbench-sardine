@@ -3,15 +3,25 @@
 Thank you for your interest in improving this project. Your contributions are
 appreciated.
 
-There are many ways to contribute, like improving the documentation, submitting
-bug reports and feature requests, or writing code.
+This document is a guide to help you through the process of contributing.
+
+## Become a contributor
+
+You can contribute in several ways. Here are some examples:
+
+- Contribute to the codebase.
+- Report and triage bugs.
+- Write documentation for users and devs.
+- Help others by answering questions.
+
+For more ways to contribute, check out the
+[Open Source Guides](https://opensource.guide/how-to-contribute).
+
+## Submit changes
 
 If you have a trivial fix or improvement, go ahead and create a pull request.
 
 If you plan something more involved, first raise an issue to discuss.
-
-Consult [`DEVELOPMENT.md`](DEVELOPMENT.md) for guidance regarding development
-and [`RELEASE.md`](RELEASE.md) for documentation of the release process.
 
 Should you wish to work on an issue, please claim it first by commenting on it.
 
@@ -27,3 +37,8 @@ When submitting changes, respect the following guidelines:
   are contributing.
 - Title your pull request following
   [Conventional Commits](https://www.conventionalcommits.org/) styling.
+
+## Where to go from here?
+
+- Consult [`DEVELOPMENT.md`](DEVELOPMENT.md) for guidance regarding development.
+- Read [`RELEASE.md`](RELEASE.md) for details about the release process.
