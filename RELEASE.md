@@ -6,7 +6,7 @@ This document describes the release process and is targeted at maintainers.
 
 Pick a name for the new release. It must follow
 [Semantic Versioning](https://semver.org). For example `1.2.0` or `5.10.7`. In
-the following the name is referenced with `$VERSION`.
+the following the name is referenced with `$VERSION`:
 
 ```shell
 VERSION=1.0.1
@@ -17,18 +17,16 @@ up-to-date. Feel free to adjust entries for example by adding additional
 examples or highlighting breaking changes.
 
 Move the content of the "Unreleased" section that will be included in the new
-release to a new section with an appropiate title for the release. Should the
+release to a new section with an appropriate title for the release. Should the
 "Unreleased" section now be empty, add "Nothing." to it.
 
-Open [`src/testbench_sardine/__init__.py`](src/testbench_sardine/__init__.py)
-and set the `__version__` variable to `$VERSION`. You can also use the following
-command to do this.
+Set the `__version__` variable in `__init__.py` to `$VERSION`:
 
 ```shell
 sed -i "/^__version__/c\__version__ = \"$VERSION\"" src/*/__init__.py
 ```
 
-Bump the version using Poetry next.
+Bump the version using Poetry:
 
 ```shell
 poetry version $VERSION
