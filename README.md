@@ -1,3 +1,8 @@
 # Testbench Sardine
 
-Personal testbench for trying out stuff.
+- Python with Python Poetry.
+- Pre-commit.
+- Task.
+- Contributing docs.
+- Development docs.
+- GitHub Actions.

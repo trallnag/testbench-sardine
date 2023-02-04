@@ -20,7 +20,7 @@ Your environment should fulfill the following basic requirements:
 
 In addition to the following sections in this document, note that the
 [`devel`](devel) directory contains more documentation including further
-information about tooling.
+information about the tooling listed above.
 
 ## Initial Setup
 

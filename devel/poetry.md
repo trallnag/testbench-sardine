@@ -9,13 +9,13 @@ Whenever this repository is cloned, the environment needs to be installed. Same
 goes for pulling changes that include dependency updates. The following command
 installs dependencies including development dependencies:
 
-```sh
+```
 poetry install
 ```
 
 You can jump into the created environment:
 
-```sh
+```
 poetry shell
 ```
 
@@ -31,14 +31,14 @@ hand.
 
 **Setup shell** so that you can run commands inside the environment:
 
-```sh
+```
 poetry shell
 ```
 
 **Run arbitrary commands** inside the environment without a Poetry shell:
 
-```sh
-poetry run $command
+```
+poetry run <command>
 ```
 
 ## Housekeeping
@@ -48,18 +48,18 @@ plugins can be used. For example
 [poetry-plugin-up](https://github.com/MousaZeidBaker/poetry-plugin-up). To
 install the plugin, execute:
 
-```sh
+```
 poetry self add poetry-plugin-up
 ```
 
 Now it can be used like this:
 
-```sh
+```
 poetry up
 ```
 
 **Update Poetry itself**:
 
-```sh
+```
 poetry self update
 ```

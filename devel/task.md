@@ -11,11 +11,11 @@ mainly used to collect common scripts / commands.
 
 It can be installed Homebrew (other options are available as well).
 
-```sh
+```
 brew install go-task/tap
 ```
 
-Task is configured via [`Taskfile.yaml`](../../Taskfile.yaml).
+Task is configured via [`Taskfile.yaml`](../Taskfile.yaml).
 
 When adding new tasks to the task file, try to keep individual tasks simple and
 small. More complicated things should be put into individual scripts and then
@@ -32,5 +32,5 @@ task --list
 **Run task:**
 
 ```
-task test
+task <task>
 ```
