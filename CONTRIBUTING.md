@@ -12,17 +12,14 @@ If you plan something more involved, first raise an issue to discuss.
 
 Consult [`DEVELOPMENT.md`](DEVELOPMENT.md) for guidance regarding development
 and [`RELEASE.md`](RELEASE.md) for documentation of the release process.
-Consider taking a look at the development documentation at
-[`docs/devel`](docs/devel). It contains more detailed documentation and other
-assets.
 
 Should you wish to work on an issue, please claim it first by commenting on it.
 
-To submit changes, respect the following guidelines:
+When submitting changes, respect the following guidelines:
 
 - Branch from the master branch and, if needed, rebase to the master branch
   before submitting your pull request.
-- Update [`CHANGELOG.md`](CHANGELOG.md) if the contribution relevant for the
+- Update [`CHANGELOG.md`](CHANGELOG.md) if the contribution is relevant for the
   changelog according to the
   [Keep a Changelog](https://keepachangelog.com/en/1.1.0) specification.
 - Ensure that your code has an appropriate set of tests which all pass.
