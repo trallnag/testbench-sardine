@@ -5,10 +5,9 @@ This document describes the release process and is targeted at maintainers.
 ## Preparation
 
 Pick a name for the new release. It must follow
-[Semantic Versioning](https://semver.org). For example `1.2.0` or `5.10.7`. In
-the following the name is referenced with `$VERSION`.
+[Semantic Versioning](https://semver.org). For example `1.2.0` or `5.10.7`.
 
-```shell
+```
 VERSION=1.0.1
 ```
 
@@ -22,13 +21,14 @@ release to a new section with an appropriate title for the release. Should the
 
 Set the `__version__` variable in `__init__.py` to `$VERSION`.
 
-```shell
+```
 sed -i "/^__version__/c\__version__ = \"$VERSION\"" src/*/__init__.py
+grep -n -H __version__ src/*/__init__.py
 ```
 
 Bump the version using Poetry.
 
-```shell
+```
 poetry version $VERSION
 ```
 
@@ -38,14 +38,9 @@ Continue with the next section.
 
 Stage and commit the changes. Remember to sign the commit.
 
-```shell
+```
 git add CHANGELOG.md src/*/__init__.py pyproject.toml
 git commit -S -m "chore: Prepare release v$VERSION"
-```
-
-Ensure that the commit is signed.
-
-```
 git log --show-signature -1
 ```
 
@@ -53,12 +48,13 @@ Tag the commit with an annotated and signed tag.
 
 ```
 git tag -s v$VERSION -m ""
-```
-
-Ensure that the tag is signed.
-
-```
 git show v$VERSION
+```
+
+Make sure that the tree looks good.
+
+```
+git log --graph --oneline --all -n 5
 ```
 
 Push changes on the master branch.
