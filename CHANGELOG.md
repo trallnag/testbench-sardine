@@ -9,6 +9,10 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0),
 
 Nothing.
 
+## [1.0.4](https://github.com/trallnag/kubestatus2cloudwatch/compare/v1.0.3...v1.0.4) / 2023-02-04
+
+Another one.
+
 ## [1.0.3](https://github.com/trallnag/kubestatus2cloudwatch/compare/v1.0.2...v1.0.3) / 2023-02-04
 
 And yet again a dummy release.
