@@ -17,6 +17,11 @@ repos:
         stages: [commit-msg]
         additional_dependencies: ["@commitlint/config-conventional"]
 
+  - repo: https://github.com/executablebooks/mdformat
+    rev: "0.7.16"
+    hooks:
+      - id: mdformat
+
   - repo: local
     hooks:
       - id: black

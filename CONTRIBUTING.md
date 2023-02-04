@@ -40,5 +40,9 @@ When submitting changes, respect the following guidelines:
 
 ## Where to go from here?
 
+There are several other documents to check out:
+
 - Consult [`DEVELOPMENT.md`](DEVELOPMENT.md) for guidance regarding development.
 - Read [`RELEASE.md`](RELEASE.md) for details about the release process.
+
+If some things are unclear, feel free to reach out via GitHub Discussions.
