@@ -19,24 +19,24 @@ Pre-commit should now run on every commit. It is also used in GitHub Actions.
 Pre-commit is configured via
 [`.pre-commit-config.yaml`](../.pre-commit-config.yaml).
 
+## Housekeeping
+
+### Update hooks
+
+```
+pre-commit autoupdate
+```
+
 ## Cheat Sheet
 
-**Run pre-commit against all files:**
+### Run pre-commit against all files
 
 ```
 pre-commit run -a
 ```
 
-**Run specific hook against all files:**
+### Run specific hook against all files
 
 ```
 pre-commit run -a <hook>
-```
-
-## Housekeeping
-
-**Update hooks:**
-
-```
-pre-commit autoupdate
 ```

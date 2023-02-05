@@ -27,23 +27,11 @@ Poetry related configuration should be done via the Poetry CLI.
 The lockfile [`../poetry.lock`](../poetry.lock) should never be adjusted by
 hand.
 
-## Cheat Sheet
-
-**Setup shell** so that you can run commands inside the environment:
-
-```
-poetry shell
-```
-
-**Run arbitrary commands** inside the environment without a Poetry shell:
-
-```
-poetry run <command>
-```
-
 ## Housekeeping
 
-To **automatically update dependencies and bump versions** in `pyproject.toml`,
+### Update dependencies
+
+To automatically update dependencies and bump versions in `pyproject.toml`,
 plugins can be used. For example
 [poetry-plugin-up](https://github.com/MousaZeidBaker/poetry-plugin-up). To
 install the plugin, execute:
@@ -58,8 +46,22 @@ Now it can be used like this:
 poetry up
 ```
 
-**Update Poetry itself**:
+### Update Poetry itself
 
 ```
 poetry self update
+```
+
+## Cheat Sheet
+
+### Setup shell
+
+```
+poetry shell
+```
+
+### Run arbitrary commands
+
+```
+poetry run <command>
 ```

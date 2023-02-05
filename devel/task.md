@@ -23,13 +23,13 @@ just called from Task.
 
 ## Cheat Sheet
 
-**List tasks:**
+### List tasks
 
 ```
 task --list
 ```
 
-**Run task:**
+### Run task
 
 ```
 task <task>
