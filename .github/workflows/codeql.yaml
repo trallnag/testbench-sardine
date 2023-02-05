@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [go]
+        language: [python]
     runs-on: ubuntu-latest
 
     permissions:
