@@ -6,8 +6,8 @@ than, for example, GNU Make.
 - <https://taskfile.dev>
 - <https://github.com/go-task/task>
 
-Having Task installed is not a hard-requirement for developing. It is
-mainly used to collect common scripts / commands.
+Having Task installed is not a hard-requirement for developing. It is mainly
+used to collect common scripts / commands.
 
 It can be installed Homebrew (other options are available as well).
 

@@ -80,8 +80,8 @@ Ensure that the new set has been published to PyPI
 [here](https://pypi.org/project/testbench-sardine).
 
 Go to the release page of this project on GitHub
-[here](https://github.com/trallnag/testbench-sardine/releases) and review
-the automatically created release draft.
+[here](https://github.com/trallnag/testbench-sardine/releases) and review the
+automatically created release draft.
 
 Set the release title to `$VERSION / $DATE`. For example "1.0.0 / 2023-01-01".
 

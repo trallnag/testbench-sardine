@@ -1,8 +1,8 @@
 # Pre-Commit
 
-Used for maintaining Git hooks. Must be installed globally on the respective system. As it
-is written in Python, for example [`pipx`](https://github.com/pypa/pipx) can be
-used to install it.
+Used for maintaining Git hooks. Must be installed globally on the respective
+system. As it is written in Python, for example
+[`pipx`](https://github.com/pypa/pipx) can be used to install it.
 
 - <https://pre-commit.com/>
 - <https://github.com/pre-commit/pre-commit>
