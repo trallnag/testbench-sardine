@@ -12,7 +12,7 @@ mainly used to collect common scripts / commands.
 It can be installed Homebrew (other options are available as well).
 
 ```
-brew install go-task/tap
+brew install go-task
 ```
 
 Task is configured via [`Taskfile.yaml`](../Taskfile.yaml).
