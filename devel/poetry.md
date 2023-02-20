@@ -2,8 +2,8 @@
 
 Used for Python dependency management and packaging. Must be installed manually.
 
-- <https://python-poetry.org/>
-- <https://github.com/python-poetry/poetry>
+- [python-poetry.org](https://python-poetry.org)
+- [github.com/python-poetry/poetry](https://github.com/python-poetry/poetry)
 
 Whenever this repository is cloned, the environment needs to be installed. Same
 goes for pulling changes that include dependency updates. The following command
