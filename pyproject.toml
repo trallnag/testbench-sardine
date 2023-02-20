@@ -7,7 +7,7 @@ name = "testbench-sardine"
 version = "1.0.4"
 description = "Personal testbench for trying out stuff."
 authors = ["Tim Schwenke <tim@trallnag.com>"]
-license = "MIT"
+license = "ISC"
 readme = "README.md"
 repository = "https://github.com/trallnag/testbench-sardine"
 
