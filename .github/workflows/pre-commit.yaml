@@ -5,13 +5,14 @@ name: Pre-commit
 #
 # - https://pre-commit.ci/lite.html
 # - https://github.com/pre-commit-ci/lite-action
+# - https://github.com/apps/pre-commit-ci-lite
 #
 # Relies on the pre-commit.ci lite GitHub app to be configured with this repo.
 #
 # Why is the non-lite pre-commit.ci not used instead? It does not support local
 # hooks using "system" as language which is heavily used within this project.
 #
-# Unlike the full version, lite does not perform autoupgrades of hooks.
+# Unlike the full version, lite does not perform automatic upgrades  of hooks.
 #
 
 on:
@@ -77,4 +78,4 @@ jobs:
       - uses: pre-commit-ci/lite-action@v1.0.0
         if: always()
         with:
-          msg: "ci(pre-commit): Apply automatic fixes"
+          msg: "ci(pre-commit): Apply hook auto fixes"
