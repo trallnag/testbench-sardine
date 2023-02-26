@@ -1,0 +1,8 @@
+query ($repoOwner: String!, $repoName: String!, $discussionCategorySlug: String!) {
+  repository(owner: $repoOwner, name: $repoName) {
+    discussionCategory(slug: $discussionCategorySlug) {
+      id
+    }
+    id
+  }
+}

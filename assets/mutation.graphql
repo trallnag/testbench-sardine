@@ -1,0 +1,7 @@
+mutation {
+  createDiscussion(input: {repositoryId: "1234", categoryId: "5678", body: "The body", title: "The title"}) {
+    discussion {
+      id
+    }
+  }
+}
