@@ -7,6 +7,8 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0).
 
 ## Unreleased
 
+Nothing.
+
 ### Changed
 
 - Switched from MIT license to functionally equivalent ISC license.
