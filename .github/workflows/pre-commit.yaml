@@ -12,7 +12,7 @@ name: Pre-commit
 # Why is the non-lite pre-commit.ci not used instead? It does not support local
 # hooks using "system" as language which is heavily used within this project.
 #
-# Unlike the full version, lite does not perform automatic upgrades  of hooks.
+# Unlike the full version, lite does not perform automatic upgrades of hooks.
 #
 
 on:
