@@ -80,3 +80,19 @@ jobs:
           if ! grep -q -R -F --include="__init__.py" "$pattern" src; then
             echo "::error::Version set with Poetry does not match __version__ variable."; exit 1
           fi
+
+  tmp:
+    name: tmp
+    runs-on: ubuntu-latest
+    steps:
+      - name: A
+        run: >-
+          xxx="foo bar"
+          && echo "LOOL=$xxx" >> $GITHUB_ENV
+
+      - name: A
+        run: |
+          echo "1"
+          echo "${{ env.LOOL }}"
+          echo "2"
+          printf "${{ env.LOOL }}"
